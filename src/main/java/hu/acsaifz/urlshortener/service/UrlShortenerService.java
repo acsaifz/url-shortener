@@ -26,8 +26,7 @@ public class UrlShortenerService {
         String shortUrl;
 
         do {
-            //shortUrl = generateShortUrl();
-            shortUrl = "aaaaab";
+            shortUrl = generateShortUrl();
         } while(urlRepository.existsShortUrl(shortUrl));
 
         Url url = new Url(shortUrl, originalUrl);
